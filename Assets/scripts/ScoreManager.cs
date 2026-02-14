@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     public Transform player;
 
     private float startY;
+    private float maxY;
     private float currentScore;
 
     public float CurrentScore => currentScore;
@@ -17,6 +19,7 @@ public class ScoreManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -29,6 +32,7 @@ public class ScoreManager : MonoBehaviour
         if (player != null)
         {
             startY = player.position.y;
+            maxY = startY;
         }
     }
 
@@ -36,8 +40,36 @@ public class ScoreManager : MonoBehaviour
     {
         if (player == null) return;
 
-        float distance = player.position.y - startY;
-        currentScore = Mathf.Max(0f, distance);
+        PlayerContoroller controller = player.GetComponent<PlayerContoroller>();
+
+        if (controller != null && controller.start)
+            return;
+
+        if (player.position.y > maxY)
+        {
+            maxY = player.position.y;
+        }
+
+        currentScore = maxY - startY;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Game")
+        {
+            ResetScore();
+        }
+    }
+
+    private void ResetScore()
+    {
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        if (player != null)
+        {
+            startY = player.position.y;
+            maxY = startY;
+            currentScore = 0f;
+        }
     }
 
     public string GetFormattedScore()

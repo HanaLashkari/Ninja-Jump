@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerContoroller : MonoBehaviour
@@ -14,6 +15,10 @@ public class PlayerContoroller : MonoBehaviour
     public AnimationState AS = AnimationState.IDLE; 
     public SpriteRenderer backgroundRenderer;
     private float screenLimit;
+    public float deathYLimit = -10f;
+    private bool isDead = false;
+    private CameraFollow cam;
+    public AudioSource DeathSound; 
 
     public enum AnimationState
     {
@@ -27,6 +32,7 @@ public class PlayerContoroller : MonoBehaviour
         Rigidbody = GetComponent<Rigidbody2D>();
         float playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
         screenLimit = backgroundRenderer.bounds.extents.x - playerWidth;
+        cam = Camera.main.GetComponent<CameraFollow>();
     }
 
     void Update()
@@ -34,6 +40,7 @@ public class PlayerContoroller : MonoBehaviour
         CalculateMoveInput();
         isStart();
         HandleDirection();
+        CheckDeath();
         SetAnimatorState();
     }
 
@@ -81,11 +88,25 @@ public class PlayerContoroller : MonoBehaviour
         }
     }
 
+private void CheckDeath()
+{
+    float bottomOfScreen = Camera.main.transform.position.y - Camera.main.orthographicSize;
+
+    if (transform.position.y < bottomOfScreen - 1f)
+    {
+        Die();
+    }
+}
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log($"Collision Enter with {other.gameObject.name}");
         if (!start && other.gameObject.CompareTag("Ground") && Rigidbody.linearVelocity.y <= 0)
         {
+            if (OnRock != null)
+                {
+                    OnRock.Play();
+                }
             Jump();
         }
     }
@@ -102,6 +123,28 @@ public class PlayerContoroller : MonoBehaviour
     {
         Rigidbody.linearVelocity = new Vector2(Rigidbody.linearVelocity.x, ConstJump);
         AS = AnimationState.JUMP;
+    }
+
+    private void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+        AS = AnimationState.DEAD;
+        if (DeathSound != null)
+            DeathSound.Play();
+        Rigidbody.linearVelocity = Vector2.zero;
+        Rigidbody.bodyType = RigidbodyType2D.Kinematic;
+        Debug.Log("Player Died");
+        if (cam != null)
+        {
+            cam.Shake(0.4f, 0.05f);
+        }
+        Invoke(nameof(LoadFailScene), 1f); 
+    }
+
+    private void LoadFailScene()
+    {
+        SceneManager.LoadScene("Fail");
     }
 
     private void SetAnimatorState()
