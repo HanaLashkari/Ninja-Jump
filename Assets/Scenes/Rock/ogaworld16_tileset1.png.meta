@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: 7f09dfbaf76be3d429c311b5dc57f8e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6384066944681080910
+    second: ogaworld16_tileset1_0
+  - first:
+      213: -7717441495378218141
+    second: ogaworld16_tileset1_1
+  - first:
+      213: -4004410958064395262
+    second: ogaworld16_tileset1_2
+  - first:
+      213: 7097908304892382559
+    second: ogaworld16_tileset1_3
+  - first:
+      213: -1330979953644198605
+    second: ogaworld16_tileset1_4
+  - first:
+      213: 1046569619837951840
+    second: ogaworld16_tileset1_5
+  - first:
+      213: 924245984051095632
+    second: ogaworld16_tileset1_6
+  - first:
+      213: 4533232595309730595
+    second: ogaworld16_tileset1_7
+  - first:
+      213: -6243342197298286888
+    second: ogaworld16_tileset1_8
+  - first:
+      213: 6686073585905642604
+    second: ogaworld16_tileset1_9
+  - first:
+      213: 2387558546292098245
+    second: ogaworld16_tileset1_10
+  - first:
+      213: -3001163743016117356
+    second: ogaworld16_tileset1_11
+  - first:
+      213: -7400746990553070557
+    second: ogaworld16_tileset1_12
+  - first:
+      213: -6864799843425114746
+    second: ogaworld16_tileset1_13
+  - first:
+      213: -8368692247653857817
+    second: ogaworld16_tileset1_14
+  - first:
+      213: -1290384765768818518
+    second: ogaworld16_tileset1_15
+  - first:
+      213: 6674600775146697024
+    second: ogaworld16_tileset1_16
+  - first:
+      213: -3425742374934614967
+    second: ogaworld16_tileset1_17
+  - first:
+      213: -5219075374539776461
+    second: ogaworld16_tileset1_18
+  - first:
+      213: 2313581398112331530
+    second: ogaworld16_tileset1_19
+  - first:
+      213: -2989798356836913842
+    second: ogaworld16_tileset1_20
+  - first:
+      213: 1394780847073142712
+    second: ogaworld16_tileset1_21
+  - first:
+      213: -5561082615366748858
+    second: ogaworld16_tileset1_22
+  - first:
+      213: 4595518440216171634
+    second: ogaworld16_tileset1_23
+  - first:
+      213: -113099634476804970
+    second: ogaworld16_tileset1_24
+  - first:
+      213: -3435939645608380985
+    second: ogaworld16_tileset1_25
+  - first:
+      213: -3590377670334472427
+    second: ogaworld16_tileset1_26
+  - first:
+      213: -7623488664410162556
+    second: ogaworld16_tileset1_27
+  - first:
+      213: 1572080437828354105
+    second: ogaworld16_tileset1_28
+  - first:
+      213: -2954528256414352895
+    second: ogaworld16_tileset1_29
+  - first:
+      213: -8439614349871981824
+    second: ogaworld16_tileset1_30
+  - first:
+      213: 9146973140678663103
+    second: ogaworld16_tileset1_31
+  - first:
+      213: -4404363113497251896
+    second: ogaworld16_tileset1_32
+  - first:
+      213: 2229518025541816521
+    second: ogaworld16_tileset1_33
+  - first:
+      213: -3642854538553159062
+    second: ogaworld16_tileset1_34
+  - first:
+      213: -1982236203514423595
+    second: ogaworld16_tileset1_35
+  - first:
+      213: -6793409448684106231
+    second: ogaworld16_tileset1_36
+  - first:
+      213: -2801513247159780154
+    second: ogaworld16_tileset1_37
+  - first:
+      213: -7019527597598501744
+    second: ogaworld16_tileset1_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48770cdf03c89850800000000000000
+      internalID: 6384066944681080910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 177
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3633f1549d326e490800000000000000
+      internalID: -7717441495378218141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 147
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cd3ed23797d68c0800000000000000
+      internalID: -4004410958064395262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 178
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5dc7693ff5d08260800000000000000
+      internalID: 7097908304892382559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 148
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3352fd3b8c8678de0800000000000000
+      internalID: -1330979953644198605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 179
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f18273689268e00800000000000000
+      internalID: 1046569619837951840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 151
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058627c53d493dc00800000000000000
+      internalID: 924245984051095632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 152
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b98aff60749ee30800000000000000
+      internalID: 4533232595309730595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_8
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 179
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de24d6a9513b59a0800000000000000
+      internalID: -6243342197298286888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 164
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c27068084b9cc50800000000000000
+      internalID: 6686073585905642604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_10
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 148
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4403819df422120800000000000000
+      internalID: 2387558546292098245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 165
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b1eb00a79b956d0800000000000000
+      internalID: -3001163743016117356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_12
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 151
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3240b8ba2d34b4990800000000000000
+      internalID: -7400746990553070557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 167
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6852d76e9e45bb0a0800000000000000
+      internalID: -6864799843425114746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_14
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 152
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5c6007dbe6cdb80800000000000000
+      internalID: -8368692247653857817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_15
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 168
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa026cc64e1a71ee0800000000000000
+      internalID: -1290384765768818518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_16
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 152
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0417a2c9a02f0ac50800000000000000
+      internalID: 6674600775146697024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 256
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ce40ad5715570d0800000000000000
+      internalID: -3425742374934614967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 83
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e5194499e1297b0800000000000000
+      internalID: -5219075374539776461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_19
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 116
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07ef61160e7b1020800000000000000
+      internalID: 2313581398112331530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 100
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d60be2c3a1286d0800000000000000
+      internalID: -2989798356836913842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 84
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b720516ac14b5310800000000000000
+      internalID: 1394780847073142712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645f67043d013d2b0800000000000000
+      internalID: -5561082615366748858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_23
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27497db5caf86cf30800000000000000
+      internalID: 4595518440216171634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_24
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69498ce4b703e6ef0800000000000000
+      internalID: -113099634476804970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_25
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5b4d1c8171150d0800000000000000
+      internalID: -3435939645608380985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_26
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f183e088a6c2ec0800000000000000
+      internalID: -3590377670334472427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_27
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a7d90637de33690800000000000000
+      internalID: -7623488664410162556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_28
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930891734d621d510800000000000000
+      internalID: 1572080437828354105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_29
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a719d54386ff6d0800000000000000
+      internalID: -2954528256414352895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_30
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b579ab67770ea80800000000000000
+      internalID: -8439614349871981824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_31
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbd034db9390fe70800000000000000
+      internalID: 9146973140678663103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_32
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfa926651f80e2c0800000000000000
+      internalID: -4404363113497251896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_33
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c010cce4d6d0fe10800000000000000
+      internalID: 2229518025541816521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_34
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a629e1d091bf17dc0800000000000000
+      internalID: -3642854538553159062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_35
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d69a9cdcaead74e0800000000000000
+      internalID: -1982236203514423595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_36
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ec6657916f8b1a0800000000000000
+      internalID: -6793409448684106231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_37
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc7d757b860f19d0800000000000000
+      internalID: -2801513247159780154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ogaworld16_tileset1_38
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094171e47d0a59e90800000000000000
+      internalID: -7019527597598501744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b9d2681e4e5123346b0157e408a6a628
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ogaworld16_tileset1_0: 6384066944681080910
+      ogaworld16_tileset1_1: -7717441495378218141
+      ogaworld16_tileset1_10: 2387558546292098245
+      ogaworld16_tileset1_11: -3001163743016117356
+      ogaworld16_tileset1_12: -7400746990553070557
+      ogaworld16_tileset1_13: -6864799843425114746
+      ogaworld16_tileset1_14: -8368692247653857817
+      ogaworld16_tileset1_15: -1290384765768818518
+      ogaworld16_tileset1_16: 6674600775146697024
+      ogaworld16_tileset1_17: -3425742374934614967
+      ogaworld16_tileset1_18: -5219075374539776461
+      ogaworld16_tileset1_19: 2313581398112331530
+      ogaworld16_tileset1_2: -4004410958064395262
+      ogaworld16_tileset1_20: -2989798356836913842
+      ogaworld16_tileset1_21: 1394780847073142712
+      ogaworld16_tileset1_22: -5561082615366748858
+      ogaworld16_tileset1_23: 4595518440216171634
+      ogaworld16_tileset1_24: -113099634476804970
+      ogaworld16_tileset1_25: -3435939645608380985
+      ogaworld16_tileset1_26: -3590377670334472427
+      ogaworld16_tileset1_27: -7623488664410162556
+      ogaworld16_tileset1_28: 1572080437828354105
+      ogaworld16_tileset1_29: -2954528256414352895
+      ogaworld16_tileset1_3: 7097908304892382559
+      ogaworld16_tileset1_30: -8439614349871981824
+      ogaworld16_tileset1_31: 9146973140678663103
+      ogaworld16_tileset1_32: -4404363113497251896
+      ogaworld16_tileset1_33: 2229518025541816521
+      ogaworld16_tileset1_34: -3642854538553159062
+      ogaworld16_tileset1_35: -1982236203514423595
+      ogaworld16_tileset1_36: -6793409448684106231
+      ogaworld16_tileset1_37: -2801513247159780154
+      ogaworld16_tileset1_38: -7019527597598501744
+      ogaworld16_tileset1_4: -1330979953644198605
+      ogaworld16_tileset1_5: 1046569619837951840
+      ogaworld16_tileset1_6: 924245984051095632
+      ogaworld16_tileset1_7: 4533232595309730595
+      ogaworld16_tileset1_8: -6243342197298286888
+      ogaworld16_tileset1_9: 6686073585905642604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
