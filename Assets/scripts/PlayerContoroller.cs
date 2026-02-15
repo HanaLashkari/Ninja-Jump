@@ -18,12 +18,14 @@ public class PlayerContoroller : MonoBehaviour
     public float deathYLimit = -10f;
     private bool isDead = false;
     private CameraFollow cam;
-    public AudioSource DeathSound; 
+    public AudioSource DeathSound;
+    public AudioSource AttackSound;
 
     public enum AnimationState
     {
         IDLE,
         JUMP,
+        JUMPATTACK,
         DEAD
     }
 
@@ -40,6 +42,10 @@ public class PlayerContoroller : MonoBehaviour
         CalculateMoveInput();
         isStart();
         HandleDirection();
+        if (Input.GetKeyDown(KeyCode.Space) && !isDead)
+        {
+            JumpAttack();
+        }
         CheckDeath();
         SetAnimatorState();
     }
@@ -120,7 +126,23 @@ private void CheckDeath()
     {
         if (other.CompareTag("Dragon"))
         {
-            Die();
+            if (AS == AnimationState.JUMPATTACK)
+            {
+                DragonController dragon =
+                    other.GetComponent<DragonController>();
+
+                if (dragon != null)
+                {
+                    dragon.Die();
+                }
+                
+                Jump();
+                
+            }
+            else
+            {
+                Die();
+            }
         }
     }
 
@@ -129,6 +151,16 @@ private void CheckDeath()
     {
         Rigidbody.linearVelocity = new Vector2(Rigidbody.linearVelocity.x, ConstJump);
         AS = AnimationState.JUMP;
+    }
+    public void JumpAttack()
+    {
+        Rigidbody.linearVelocity =
+            new Vector2(Rigidbody.linearVelocity.x, ConstJump);
+
+        AS = AnimationState.JUMPATTACK;
+        
+        if (AttackSound != null)
+            AttackSound.Play();
     }
 
     private void Die()
@@ -166,6 +198,10 @@ private void CheckDeath()
             case AnimationState.JUMP:
                 Animator.SetInteger("isJumping", 1);
                 break;
+            case AnimationState.JUMPATTACK:
+                Animator.SetInteger("isJumping", 2);
+                break;
+
             case AnimationState.DEAD:
                 Animator.SetTrigger("Dead");
                 break;

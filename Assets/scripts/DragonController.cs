@@ -9,6 +9,7 @@ public class DragonController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private float screenLimit;
     private int direction = 1;
+    private bool isDead = false;
 
     void Start()
     {
@@ -47,4 +48,25 @@ public class DragonController : MonoBehaviour
             spriteRenderer.flipX = false;
         }
     }
+    
+
+    public void Die()
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        
+        rb.linearVelocity = Vector2.zero;
+        
+        rb.gravityScale = 1.5f;
+        
+        GetComponent<Collider2D>().enabled = false;
+
+        Debug.Log("Dragon Died");
+        
+        Destroy(gameObject, 2f);
+    }
+
 }
