@@ -109,15 +109,21 @@ private void CheckDeath()
                 }
             Jump();
         }
+
+        // if (other.gameObject.CompareTag("Dragon"))
+        // {
+        //     Die();
+        // }
     }
 
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.gameObject.CompareTag("Dragon"))
-    //     {
-    //         // Die();
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Dragon"))
+        {
+            Die();
+        }
+    }
+
     
     public void Jump()
     {
@@ -132,14 +138,15 @@ private void CheckDeath()
         AS = AnimationState.DEAD;
         if (DeathSound != null)
             DeathSound.Play();
-        Rigidbody.linearVelocity = Vector2.zero;
-        Rigidbody.bodyType = RigidbodyType2D.Kinematic;
+        gameObject.layer = LayerMask.NameToLayer("Dead");
+        Rigidbody.linearVelocity = new Vector2(0f, Rigidbody.linearVelocity.y);
+        Rigidbody.gravityScale = 1.2f; 
         Debug.Log("Player Died");
         if (cam != null)
         {
             cam.Shake(0.4f, 0.05f);
         }
-        Invoke(nameof(LoadFailScene), 1f); 
+        Invoke(nameof(LoadFailScene), 1.5f);
     }
 
     private void LoadFailScene()

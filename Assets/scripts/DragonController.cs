@@ -3,31 +3,25 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class DragonController : MonoBehaviour
 {
-    public float speed = 2f;
-    public float moveDistance = 3f;
-
+    public float speed = 1f;
+    private SpriteRenderer backgroundRenderer;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
-
-    private float startX;
-    private float leftLimit;
-    private float rightLimit;
-
+    private float screenLimit;
     private int direction = 1;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        startX = transform.position.x;
-
-        leftLimit = startX - moveDistance;
-        rightLimit = startX + moveDistance;
-
-        // شروع حرکت به سمت چپ
-        direction = 1;
-        spriteRenderer.flipX = true;
+        GameObject bgObject = GameObject.Find("Background");
+        if (bgObject != null)
+        {
+            backgroundRenderer = bgObject.GetComponent<SpriteRenderer>();
+            float dragonWidth = spriteRenderer.bounds.extents.x;
+            screenLimit = backgroundRenderer.bounds.extents.x - dragonWidth;
+        }
+        rb.gravityScale = 0; 
     }
 
     void FixedUpdate()
@@ -37,14 +31,17 @@ public class DragonController : MonoBehaviour
 
     void Move()
     {
-        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+        if (backgroundRenderer == null) return;
+        rb.linearVelocity = new Vector2(direction * speed, 0);
 
-        if (direction == -1 && transform.position.x <= leftLimit)
+        float bgCenterX = backgroundRenderer.bounds.center.x;
+
+        if (direction == -1 && transform.position.x <= bgCenterX - screenLimit)
         {
             direction = 1;
             spriteRenderer.flipX = true;
         }
-        else if (direction == 1 && transform.position.x >= rightLimit)
+        else if (direction == 1 && transform.position.x >= bgCenterX + screenLimit)
         {
             direction = -1;
             spriteRenderer.flipX = false;

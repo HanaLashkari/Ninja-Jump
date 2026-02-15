@@ -260,7 +260,7 @@ Transform:
   m_GameObject: {fileID: 565795421}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.87, y: -3.127, z: 0}
+  m_LocalPosition: {x: -1.07, y: -3.1, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -689,7 +689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1030960442}
-  - component: {fileID: 1030960441}
+  - component: {fileID: 1030960443}
   m_Layer: 0
   m_Name: RockSpawner
   m_TagString: Untagged
@@ -697,22 +697,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1030960441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030960440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0745c40df6d370b40837905519984e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rockPrefab: {fileID: 2588862264990130499, guid: aec642d35b64fec418a5a36359e1db5a, type: 3}
-  playerController: {fileID: 565795428}
-  backgroundRenderer: {fileID: 1936461966}
-  StartingRock: {fileID: 397554960}
 --- !u!4 &1030960442
 Transform:
   m_ObjectHideFlags: 0
@@ -728,6 +712,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030960443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030960440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0745c40df6d370b40837905519984e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockPrefab: {fileID: 2588862264990130499, guid: aec642d35b64fec418a5a36359e1db5a, type: 3}
+  dragonPrefab: {fileID: 4893997112795502380, guid: 7250380cb525d474ca52c7ab51f46ac8, type: 3}
+  playerController: {fileID: 565795428}
+  backgroundRenderer: {fileID: 1936461966}
+  StartingRock: {fileID: 397554960}
 --- !u!1 &1510307320
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +959,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5770115, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2028525786}
@@ -1302,7 +1303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1561126039968503830, guid: aec642d35b64fec418a5a36359e1db5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1561126039968503830, guid: aec642d35b64fec418a5a36359e1db5a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1342,7 +1343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2588862264990130499, guid: aec642d35b64fec418a5a36359e1db5a, type: 3}
       propertyPath: m_Name
-      value: Rock
+      value: StartingRock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1358,5 +1359,5 @@ SceneRoots:
   - {fileID: 1030960442}
   - {fileID: 565795426}
   - {fileID: 3452257100187720955}
-  - {fileID: 1947975646}
   - {fileID: 1510307324}
+  - {fileID: 1947975646}
