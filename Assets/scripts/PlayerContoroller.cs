@@ -42,12 +42,17 @@ public class PlayerContoroller : MonoBehaviour
         CalculateMoveInput();
         isStart();
         HandleDirection();
+        HandleJumpAttack();
+        CheckDeath();
+        SetAnimatorState();
+    }
+
+    private void HandleJumpAttack()
+    {
         if (Input.GetKeyDown(KeyCode.Space) && !isDead)
         {
             JumpAttack();
         }
-        CheckDeath();
-        SetAnimatorState();
     }
 
     void FixedUpdate()
@@ -94,15 +99,15 @@ public class PlayerContoroller : MonoBehaviour
         }
     }
 
-private void CheckDeath()
-{
-    float bottomOfScreen = Camera.main.transform.position.y - Camera.main.orthographicSize;
-
-    if (transform.position.y < bottomOfScreen - 1f)
+    private void CheckDeath()
     {
-        Die();
+        float bottomOfScreen = Camera.main.transform.position.y - Camera.main.orthographicSize;
+
+        if (transform.position.y < bottomOfScreen - 1f)
+        {
+            Die();
+        }
     }
-}
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -115,11 +120,6 @@ private void CheckDeath()
                 }
             Jump();
         }
-
-        // if (other.gameObject.CompareTag("Dragon"))
-        // {
-        //     Die();
-        // }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

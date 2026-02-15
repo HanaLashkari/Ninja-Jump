@@ -34,10 +34,8 @@ public class DragonController : MonoBehaviour
     void Move()
     {
         if (backgroundRenderer == null) return;
-        rb.linearVelocity = new Vector2(direction * speed, 0);
-
+        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
         float bgCenterX = backgroundRenderer.bounds.center.x;
-
         if (direction == -1 && transform.position.x <= bgCenterX - screenLimit)
         {
             direction = 1;
@@ -50,20 +48,27 @@ public class DragonController : MonoBehaviour
         }
     }
     
-    
-    public void Die()
-    {
-        if (isDead) return;
+public void Die()
+{
+    if (isDead) return;
 
-        isDead = true;
+    isDead = true;
 
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        
-        rb.linearVelocity = Vector2.zero;
-        
-        GetComponent<Collider2D>().enabled = false;
-        
-        Destroy(gameObject);
-    }
-  
+    // توقف کامل حرکت افقی
+    rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+    // فعال شدن گراویتی
+    rb.gravityScale = 1.5f;
+
+    // از همه چیز رد شود
+    gameObject.layer = LayerMask.NameToLayer("Dead");
+
+    Collider2D col = GetComponent<Collider2D>();
+    if (col != null)
+        col.enabled = false;
+
+    Destroy(gameObject, 3f);
+}
+
+
 }
