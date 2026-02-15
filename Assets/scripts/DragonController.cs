@@ -26,7 +26,8 @@ public class DragonController : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+    {   
+        if (isDead) return;
         Move();
     }
 
@@ -49,7 +50,7 @@ public class DragonController : MonoBehaviour
         }
     }
     
-
+    
     public void Die()
     {
         if (isDead) return;
@@ -60,13 +61,9 @@ public class DragonController : MonoBehaviour
         
         rb.linearVelocity = Vector2.zero;
         
-        rb.gravityScale = 1.5f;
-        
         GetComponent<Collider2D>().enabled = false;
-
-        Debug.Log("Dragon Died");
         
-        Destroy(gameObject, 2f);
+        Destroy(gameObject);
     }
-
+  
 }
