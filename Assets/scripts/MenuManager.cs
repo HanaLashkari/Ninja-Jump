@@ -30,11 +30,24 @@ public class MenuManager : MonoBehaviour
 
     private void QuitGame()
     {
-    #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-    #else
-        Application.Quit();
-    #endif
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
+
+    public void OpenGuide()
+    {
+        if (clickSound != null)
+            clickSound.Play();
+
+        Invoke(nameof(LoadGuideScene), 0.2f);
+    }
+
+    private void LoadGuideScene()
+    {
+        SceneManager.LoadScene("Guide");
     }
 
 }

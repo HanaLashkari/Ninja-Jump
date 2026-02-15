@@ -56,7 +56,6 @@ public class LoseManager : MonoBehaviour
     public void OnTryAgain()
     {
         if (clickSound != null) clickSound.Play();
-
         Invoke(nameof(LoadGameScene), 0.2f);
     }
 
@@ -68,7 +67,6 @@ public class LoseManager : MonoBehaviour
     public void OnMenu()
     {
         if (clickSound != null) clickSound.Play();
-
         Invoke(nameof(LoadMenuScene), 0.2f);
     }
 
