@@ -20,6 +20,9 @@ public class PlayerContoroller : MonoBehaviour
     private CameraFollow cam;
     public AudioSource DeathSound;
     public AudioSource AttackSound;
+    private float attackDuration = 0.3f;
+    private float attackTimer = 0f;
+    private bool isAttacking = false;
 
     public enum AnimationState
     {
@@ -43,16 +46,9 @@ public class PlayerContoroller : MonoBehaviour
         isStart();
         HandleDirection();
         HandleJumpAttack();
+        HandleAttackTimer();
         CheckDeath();
         SetAnimatorState();
-    }
-
-    private void HandleJumpAttack()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && !isDead)
-        {
-            JumpAttack();
-        }
     }
 
     void FixedUpdate()
@@ -96,6 +92,26 @@ public class PlayerContoroller : MonoBehaviour
         else if(MoveInput.x < 0) 
         {
             SpriteRenderer.flipX = true;
+        }
+    }
+
+    private void HandleJumpAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && !isDead)
+        {
+            JumpAttack();
+        }
+    }
+
+    private void HandleAttackTimer()
+    {
+        if (!isAttacking) return;
+        attackTimer -= Time.deltaTime;
+        if (attackTimer <= 0f)
+        {
+            isAttacking = false;
+            if (!isDead)
+                AS = AnimationState.JUMP;
         }
     }
 
@@ -146,21 +162,23 @@ public class PlayerContoroller : MonoBehaviour
         }
     }
 
-    
     public void Jump()
     {
         Rigidbody.linearVelocity = new Vector2(Rigidbody.linearVelocity.x, ConstJump);
         AS = AnimationState.JUMP;
     }
+
     public void JumpAttack()
     {
-        Rigidbody.linearVelocity =
-            new Vector2(Rigidbody.linearVelocity.x, ConstJump);
-
-        AS = AnimationState.JUMPATTACK;
-        
+        if (isDead) return;
+        isAttacking = true;
+        attackTimer = attackDuration;
+        Animator.ResetTrigger("Attack");
+        Animator.SetTrigger("Attack");
+   Animator.Play("jump and attck", 0, 0f);
         if (AttackSound != null)
             AttackSound.Play();
+        AS = AnimationState.JUMPATTACK;
     }
 
     private void Die()
@@ -193,15 +211,11 @@ public class PlayerContoroller : MonoBehaviour
         switch (AS)
         {
             case AnimationState.IDLE:
-                Animator.SetInteger("isJumping", 0);
+                Animator.SetInteger("IsJumping", 0);
                 break;
             case AnimationState.JUMP:
-                Animator.SetInteger("isJumping", 1);
+                Animator.SetInteger("IsJumping", 1);
                 break;
-            case AnimationState.JUMPATTACK:
-                Animator.SetInteger("isJumping", 2);
-                break;
-
             case AnimationState.DEAD:
                 Animator.SetTrigger("Dead");
                 break;
