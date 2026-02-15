@@ -1,7 +1,8 @@
 # Ninja Jump
 
 **Welcome to Ninja Jump!**
-A fast-paced 2D action game where timing and precision are everything.
+A fast-paced 2D action game.
+This game developed by Hana Lashkari and Hanie Mahmoudali
 
 ## 🎮 Controls
 
