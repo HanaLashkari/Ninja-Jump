@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class DragonController : MonoBehaviour
 {
-    public float speed = 1f;
+    public float speed = 1.5f;
     private SpriteRenderer backgroundRenderer;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -48,27 +48,17 @@ public class DragonController : MonoBehaviour
         }
     }
     
-public void Die()
-{
-    if (isDead) return;
-
-    isDead = true;
-
-    // توقف کامل حرکت افقی
-    rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-
-    // فعال شدن گراویتی
-    rb.gravityScale = 1.5f;
-
-    // از همه چیز رد شود
-    gameObject.layer = LayerMask.NameToLayer("Dead");
-
-    Collider2D col = GetComponent<Collider2D>();
-    if (col != null)
-        col.enabled = false;
-
-    Destroy(gameObject, 3f);
-}
-
+    public void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        rb.gravityScale = 1.5f;
+        gameObject.layer = LayerMask.NameToLayer("Dead");
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+            col.enabled = false;
+        Destroy(gameObject, 5f);
+    }
 
 }

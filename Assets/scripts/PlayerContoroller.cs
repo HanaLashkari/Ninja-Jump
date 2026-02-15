@@ -20,7 +20,6 @@ public class PlayerContoroller : MonoBehaviour
     private CameraFollow cam;
     public AudioSource DeathSound;
     public AudioSource AttackSound;
-    private float attackDuration = 0.3f;
     private float attackTimer = 0f;
     private bool isAttacking = false;
 
@@ -72,6 +71,7 @@ public class PlayerContoroller : MonoBehaviour
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 start = false;
+                Animator.SetBool("Start", false);
                 Jump();
             }
         }
@@ -110,8 +110,6 @@ public class PlayerContoroller : MonoBehaviour
         if (attackTimer <= 0f)
         {
             isAttacking = false;
-            if (!isDead)
-                AS = AnimationState.JUMP;
         }
     }
 
@@ -172,10 +170,8 @@ public class PlayerContoroller : MonoBehaviour
     {
         if (isDead) return;
         isAttacking = true;
-        attackTimer = attackDuration;
         Animator.ResetTrigger("Attack");
         Animator.SetTrigger("Attack");
-   Animator.Play("jump and attck", 0, 0f);
         if (AttackSound != null)
             AttackSound.Play();
         AS = AnimationState.JUMPATTACK;
@@ -215,6 +211,8 @@ public class PlayerContoroller : MonoBehaviour
                 break;
             case AnimationState.JUMP:
                 Animator.SetInteger("IsJumping", 1);
+                break;
+            case AnimationState.JUMPATTACK:
                 break;
             case AnimationState.DEAD:
                 Animator.SetTrigger("Dead");
