@@ -6,14 +6,14 @@ This game developed by Hana Lashkari and Hanie Mahmoudali
 
 ## 🎮 Controls
 
-* **A / D** or **Left / Right Arrow** → Move
-* **Space** → Attack
+* **A / D or Left / Right Arrow → Move**
+* **Space → Attack**
 
 ## 🐉 Gameplay
 
 * Attack dragons to defeat them.
-* If you collide with a dragon **without attacking**, you die.
-* Your score is based on the **distance you travel by jumping**.
+* If you collide with a dragon without attacking, you die.
+* Your score is based on the distance you travel by jumping.
 
 ## ⚔️ Objective
 
